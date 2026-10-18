@@ -1,3 +1,4 @@
+from step01 import Variable
 class Function:
     def __call__(self, input):
         x = input.data
@@ -7,8 +8,6 @@ class Function:
 
     def forward(self, x):
         raise NotImplementedError() # Must be implemented by subclasses.
-
-
 
 class Square(Function):
     def forward(self, x):
